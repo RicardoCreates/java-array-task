@@ -34,5 +34,9 @@ public class Main {
         for (int i = 0; i < array1.length; i++) {
             resultArray[i] = array1[i] + array2[i];
         }
+
+        for (int i = 0; i < resultArray.length; i++) {
+            System.out.println(resultArray[i]);
+        }
     }
 }
