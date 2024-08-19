@@ -1,4 +1,8 @@
 package de.ricardo;
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +15,7 @@ public class Main {
 
         int sum = 0;
         for (int i = 0; i < array1.length; i++) {
-            sum+=array1[i];
+            sum += array1[i];
         }
 
         System.out.println("Sum of Array 1: " + sum);
@@ -33,7 +37,7 @@ public class Main {
 //        }
 
         // create new array to store sums
-        int [] resultArray = new int[array1.length];
+        int[] resultArray = new int[array1.length];
 
         // perform element-wise addition of the two arrays
         for (int i = 0; i < array1.length; i++) {
@@ -45,5 +49,18 @@ public class Main {
         for (int n : resultArray) {
             System.out.println(n);
         }
+
+        // scanner
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a text:");
+
+        String inputText = scanner.nextLine();
+
+        System.out.println("Individual letters:");
+        for (int i = 0; i < inputText.length(); i++) {
+            System.out.println(inputText.charAt(i));
+        }
+
+        scanner.close();
     }
 }
