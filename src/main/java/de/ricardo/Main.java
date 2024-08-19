@@ -1,5 +1,4 @@
 package de.ricardo;
-import org.w3c.dom.ls.LSOutput;
 
 import java.util.Scanner;
 
@@ -57,8 +56,8 @@ public class Main {
         String inputText = scanner.nextLine();
 
         System.out.println("Individual letters:");
-        for (int i = 0; i < inputText.length(); i++) {
-            System.out.println(inputText.charAt(i));
+        for(char c : inputText.toCharArray()) {
+            System.out.println(c);
         }
 
         scanner.close();
