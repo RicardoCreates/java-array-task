@@ -26,17 +26,24 @@ public class Main {
 
         int[] array2 = {11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
 
-        for (int i = 0; i < array2.length; i++) {
-            System.out.println(array2[i]);
-        }
 
+        // war das überhaupt gefragt?
+//        for (int i = 0; i < array2.length; i++) {
+//            System.out.println(array2[i]);
+//        }
+
+        // create new array to store sums
         int [] resultArray = new int[array1.length];
+
+        // perform element-wise addition of the two arrays
         for (int i = 0; i < array1.length; i++) {
             resultArray[i] = array1[i] + array2[i];
         }
 
-        for (int i = 0; i < resultArray.length; i++) {
-            System.out.println(resultArray[i]);
+        // print out result array
+        System.out.println("Result Array: ");
+        for (int n : resultArray) {
+            System.out.println(n);
         }
     }
 }
